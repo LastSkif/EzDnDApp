@@ -1,17 +1,20 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:id="@+id/mainActivityNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_gravity="center"
         android:background="?android:attr/windowBackground"
-        app:menu="@menu/main_bottom_navigation" />
+        android:elevation="16dp"
+        android:padding="8dp"
+        app:cnb_menuResource="@menu/main_bottom_navigation"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <fragment
         android:id="@+id/mainActivityFragment"
@@ -22,4 +25,4 @@
         app:defaultNavHost="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:ignore="FragmentTagUsage" />
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
