@@ -7,26 +7,26 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import com.example.ezdndapp.R
-import com.example.ezdndapp.viewmodel.InventoryViewModel
+import com.example.ezdndapp.viewmodel.CharacterListViewModel
 
-class InventoryFragment : Fragment() {
+class CharacterListFragment : Fragment() {
 
     companion object {
-        fun newInstance() = InventoryFragment()
+        fun newInstance() = CharacterListFragment()
     }
 
-    private lateinit var viewModel: InventoryViewModel
+    private lateinit var viewModel: CharacterListViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.inventory_fragment, container, false)
+        return inflater.inflate(R.layout.character_list_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(InventoryViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(CharacterListViewModel::class.java)
         // TODO: Use the ViewModel
     }
 
