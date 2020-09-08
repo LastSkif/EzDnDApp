@@ -4,9 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.setupWithNavController
 import com.example.ezdndapp.R
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUpBottomNav(navController: NavController) {
-        val bottomNav = findViewById<BottomNavigationView>(R.id.mainActivityNavigationView)
-        bottomNav?.setupWithNavController(navController)
+        //val bottomNav = findViewById<BottomNavigationView>(R.id.mainActivityNavigationView)
+        //bottomNav?.setupWithNavController(navController)
     }
 }
