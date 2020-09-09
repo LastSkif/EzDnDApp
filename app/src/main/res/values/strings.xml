@@ -2,4 +2,5 @@
     <string name="app_name">EzDnDApp</string>
     <string name="character_list">Пивберг</string>
     <string name="inventory">Инвентарь</string>
+    <string name="character">Пивберг</string>
 </resources>
