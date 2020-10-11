@@ -3,4 +3,10 @@
     <string name="character_list">Пивберг</string>
     <string name="inventory">Инвентарь</string>
     <string name="character">Пивберг</string>
+    <string name="strength_text">Сила</string>
+    <string name="dexterity_text">Ловкость</string>
+    <string name="physique_text">Телосложение</string>
+    <string name="intelligence_text">Интеллект</string>
+    <string name="wisdom_text">Мудрость</string>
+    <string name="charisma_text">Харизма</string>
 </resources>
